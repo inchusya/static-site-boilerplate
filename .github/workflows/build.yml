@@ -2,7 +2,7 @@ name: Build site
 
 on:
   push:
-    branches: [build]
+    branches: ['gh-pages']
 
 jobs:
   build:
