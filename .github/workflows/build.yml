@@ -16,6 +16,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Run install
+        uses: borales/actions-yarn@v4.2.0
+        with:
+          cmd: install
+
       - name: Run build
         uses: borales/actions-yarn@v4.2.0
         with:
