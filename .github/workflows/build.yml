@@ -4,19 +4,19 @@ on:
   push:
     branches: [build]
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-      steps:
-        - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-        - name: Set Node.js 18
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18
+      - name: Set Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-        - name: Run build
-          uses: borales/actions-yarn@v4
-          with:
-            cmd: build
+      - name: Run build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
