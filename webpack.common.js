@@ -100,6 +100,7 @@ module.exports = {
         location: 'analytics',
         template_filename: '*',
         priority: 'replace'
+<<<<<<< HEAD
       } 
     ]),
 
@@ -131,6 +132,10 @@ module.exports = {
       filename: 'templates.html',
       chunks: ['page']
     })
+=======
+      }
+    ])
+>>>>>>> c21e4cead3ce106e2b3654fb641dc92071425753
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
