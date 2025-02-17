@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Geologica','PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.images {
+  display: flex;
+
+  * {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+  .image {
+    &#bgPNG {
+      background-image: url('images/image.png');
+    }
+
+    &#bgJPG {
+      background-image: url('images/image.jpg');
+    }
+
+    &#bgSVG {
+      background-image: url('images/image.svg');
+    }
+  }
+}
+
+
+body {
+  width: 100%;
+  font-family: 'Geologica', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFCF6;
+}
+
+header {
+  margin-left: 20%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    cursor: pointer;
+    
+
+    text-decoration: none;
+}
+
+a, h1, h2, h3 {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2E3341; 
+  text-decoration: none;
+}
+a:hover {
+  color: #388e3c;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2E3341;
+  line-height: 140%;
+  
+}
+
+h1 { /* это большой заголовок */
+  font-size: 80px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+h2 { /* цитаты */
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 50px;
+  white-space: pre-line;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h3 { /* это лиды и подзаголовки */
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h4 { /* маленькие */
+  font-size: 20px;
+  color: #00AF64; 
+  font-weight: 400;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 5px solid #ccc;
+}
+
+span{
+  color: #00AF64; 
+}

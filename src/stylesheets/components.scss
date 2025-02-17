@@ -1,0 +1,71 @@
+// атомики
+
+.a_textblock {
+    max-width: 800px;
+    padding-top: 20px;
+}
+
+
+
+// молекулки
+
+.m_leadimg{
+position: absolute;
+z-index: -2;
+}
+
+// организмы
+
+.o_pagetexts{
+    padding-top: 80px;
+}
+
+// суперорги
+
+.so_page{
+    margin-left: 20%;
+}
+
+
+
+
+
+.manual-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .manual-card {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .manual-card-image {
+        width: 100%;
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .manual-card-content {
+        padding: 10px;
+        background: #98B2FF;
+        h3 {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+        p {
+          font-size: 0.9rem;
+          color: #666;
+        }
+      }
+    }
+  }
