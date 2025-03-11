@@ -1,0 +1,112 @@
+
+@media only screen and (min-device-width: 1441px) and (max-device-width: 1921px) {}
+
+@media only screen and (min-device-width: 1365px) and (max-device-width: 1441px) {}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+   
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
+      /* айпадики и маленикие компы*/
+      /* мануал библиотека*/
+    .a_navbar {
+        margin-left: 10%;
+    }
+    nav{
+        margin-left: 10%;
+    }
+    header{
+        padding-top: 90px;
+        position: fixed;
+    }
+   .so_page {
+        margin-left: 10%;
+    }
+    .so_manualpage {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .m_leadimg{
+        width: 100%;
+        margin-top: 6%;
+    }
+    .a_headerlogo {
+        
+        margin-top: 1.5%;
+        margin-left: 47%;
+    }
+    .o_pagetexts {
+        padding-top: 27%;
+    }
+    .o_pagetextsmain{
+        padding-top: 2%;
+    }
+    .o_pagetextssmall{
+        padding-top: 27%;
+    }
+    .o_manualpageleft {
+        width: 80%;
+    }
+
+.o_manualpageright {
+    width: 90%;
+    
+}
+.a_headerlogoimg {
+    
+    width: 10%;
+}
+.a_linkchapter {
+    padding-right: 6%;
+}
+.m_posterpage {
+    max-width: 630px;
+}
+
+
+}
+
+  /* @media only screen and (min-device-width: 600px) and (max-device-width: 768px) {}
+    /* айпадики */ 
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+     /* телефончики */
+     .manual-cards .manual-card {
+        display: flex;
+        flex-direction: column;
+        width: 620px;
+        height: 461px;
+     }
+     .manual-card-content {
+
+        h3 {
+          font-size: 20px;
+          
+        }
+        p {
+          font-size: 0.9rem;
+         
+        }
+      }
+      h3 {
+        font-size: 20px;
+        
+      }
+      header{
+        padding-top: 90px;
+    }
+    .a_headerlogo {
+        
+        margin-top: 1.5%;
+        margin-left: 47%;
+    }
+    .a_headerlogoimg {
+    
+        width: 10%;
+    }
+    .o_postergrid {
+        display: flex;
+        flex-direction: column;}
+
+    }  

@@ -1,48 +1,182 @@
 // атомики
-
+@import './responsive.scss';
 .a_textblock {
     max-width: 800px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.a_headerlogo{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+  position: fixed;
+  z-index: 1;
+}
+.a_headerlogoimg{
+  display: block;
+  position: fixed;
+}
 
+.a_linkback{
+  padding-bottom: 50px;
+}
+.a_linkchapter{
+  padding-bottom: 50px;
+  margin-top: 20px;
+  padding-right: 100px;
+  font-size: 24px;
+}
 
 // молекулки
+.footertext {
+  color: #FFFCF6;
+  
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footerinside{
+  width: 100%;
+  left: 0;
+  margin: 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+}
 
 .m_leadimg{
 position: absolute;
 z-index: -2;
 }
 
+
+.m_postergrid{
+  max-width: 360px;
+  
+  
+  
+}
+.m_templategrid{
+  max-width: 360px;
+  border-color: rgb(57, 57, 57);
+  border-width: 20px;
+  transition: transform 0.2sease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.m_posterpage{
+  max-width: 850px;
+}
+.m_postergridimg{
+  border-width: 2px;
+  border-color: #2E3341;
+}
+.m_posterhide{
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); 
+
+}
+.m_posterhide:hover  {
+  opacity: 1;
+}
+.m_posternav{
+  margin-bottom: 20px;
+}
+
+
+.template-buttons {
+  display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    max-width: 360px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  .btn {
+    padding: 8px 12px;
+    background-color: #00AF64;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #086FA2;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 // организмы
 
 .o_pagetexts{
-    padding-top: 80px;
+  padding-top: 230px;
+}
+
+.o_postergrid{
+  display: flex;
+  flex-wrap: wrap;
+  
+  row-gap: 40px;
+  column-gap: 30px;
+  max-width: 1550px;
 }
 
 // суперорги
 
 .so_page{
     margin-left: 20%;
+    
 }
 
 
-
+.so_manualpage{
+  display: flex;
+  max-width: 100%;
+  margin-left: 20%;
+  gap: 12%;
+}
+.o_manualpageleft{
+  width: 38%;
+}
+.o_manualpageright{
+  width: 20%;
+  margin-top: 10%;
+}
 
 
 .manual-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    
 
     .manual-card {
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      width: 200px;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 360px;
+        height: 260px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.2sease-in-out;
+        justify-content: flex-end;
 
       &:hover {
         transform: scale(1.05);
@@ -55,10 +189,12 @@ z-index: -2;
       }
 
       .manual-card-content {
-        padding: 10px;
-        background: #98B2FF;
+        padding: 20px;
+        
+        
         h3 {
-          font-size: 1.2rem;
+          font-size: 20px;
+          padding-bottom: 10px;
           margin: 0;
         }
         p {
@@ -66,5 +202,42 @@ z-index: -2;
           color: #666;
         }
       }
+    }
+  }
+  
+
+
+  .search-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .search-results {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .search-results li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+  
+    &:hover {
+      background: #f0f0f0;
     }
   }

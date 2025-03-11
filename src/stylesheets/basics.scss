@@ -1,6 +1,10 @@
+
 * {
   box-sizing: border-box;
 }
+
+@import './components.scss';
+@import './responsive.scss';
 
 html,
 body {
@@ -46,16 +50,42 @@ body {
   background-color: #FFFCF6;
 }
 
+footer {
+    
+  background: #2E3341;
+
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center
+}
+
+
+
+
+
+
+
 header {
-  margin-left: 20%;
+  
   padding-top: 70px;
   padding-bottom: 70px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  position: fixed;
+  background-color: #f7f5f0;
+  width: 100%;
 
-  
+
 }
   
 nav ul {
@@ -63,9 +93,10 @@ nav ul {
     list-style: none;
     gap: 100px;
     cursor: pointer;
-    
-
     text-decoration: none;
+}
+nav{
+  margin-left: 20%;
 }
 
 a, h1, h2, h3 {
@@ -76,7 +107,7 @@ a, h1, h2, h3 {
   text-decoration: none;
 }
 a:hover {
-  color: #388e3c;
+  color: #00AF64;
 }
 
 p {
@@ -91,7 +122,9 @@ p {
 h1 { /* это большой заголовок */
   font-size: 80px;
   font-weight: 700;
+  padding-top: 20px;
   padding-bottom: 10px;
+  max-width: 1000px;
 }
 
 h2 { /* цитаты */
@@ -111,8 +144,10 @@ h3 { /* это лиды и подзаголовки */
 
 h4 { /* маленькие */
   font-size: 20px;
+  line-height: 140%;
   color: #00AF64; 
   font-weight: 400;
+  padding-bottom: 20px;
 }
 
 blockquote {
@@ -126,3 +161,5 @@ blockquote {
 span{
   color: #00AF64; 
 }
+
+
