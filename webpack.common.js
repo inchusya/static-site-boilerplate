@@ -84,14 +84,6 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Internal pages
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
-    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
