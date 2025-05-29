@@ -81,6 +81,8 @@ z-index: -2;
 
 .m_postergrid{
   max-width: 360px;
+  border: 2px solid #ddd;
+    border-radius: 8px;
 
 }
 .m_postergridfilter{
@@ -321,7 +323,9 @@ margin-inline: 30px;
       &:hover {
         transform: scale(1.05);
       }
-
+    
+    }
+   
       .manual-card-image {
         width: 100%;
         background-size: cover;
@@ -346,8 +350,56 @@ margin-inline: 30px;
         }
       }
     }
-  }
   
+    anual-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 20px;
+  
+      .manual-card-adaptive {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          width: 360px;
+          height: 260px;
+          border-radius: 10px;
+          overflow: hidden;
+          transition: transform 0.2sease-in-out;
+          justify-content: flex-end;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+      
+      }
+     
+        .manual-card-image {
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+        }
+  
+        .manual-card-content {
+          padding: 20px;
+          padding: 20px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+          
+          
+          h3 {
+            font-size: 24px;
+            padding-bottom: 10px;
+            margin: 0;
+          }
+          p {
+            font-size: 16px;
+            color: #38383C;
+          }
+        }
+      }
+    
+    
 
 
   .search-container {
