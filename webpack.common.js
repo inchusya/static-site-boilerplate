@@ -10,29 +10,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
 
-const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
 
-module.exports = {
-  // другие настройки...
-  entry: './src/javascript/page.jsx',
-  output: {
-    filename: 'page.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-  },
-  plugins: [
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, 'src/posterpages'),
-          to: 'posterpages',
-        },
-      ],
-    }),
-  ],
-  // остальная конфигурация...
-};
 
 
 

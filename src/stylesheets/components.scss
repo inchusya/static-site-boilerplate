@@ -5,7 +5,7 @@
     padding-bottom: 20px;
 }
 .a_textblock{
-
+  display: block;
 }
 .a_headerlogo{
   position: absolute;
@@ -98,7 +98,7 @@ z-index: -2;
   }
 }
 .m_posterpage{
-  max-width: 850px;
+  max-width: 600px;
 }
 .m_postergridimg{
   border-width: 2px;
@@ -240,6 +240,9 @@ margin-inline: 30px;
 .m_mainsection { grid-area: 2 / 5 / 3 / 13; 
   margin-top: 40px; }
 
+.m_chapterposter {grid-area: 3 / 6 / 4 / 12; }
+.m_notesposter {grid-area: 3 / 1 / 4 / 6; }
+.m_sideposter {grid-area: 3 / 12 / 4 / 17; }
 .m_navbar { grid-area: 1 / 1 / 1 / 17; 
   display: flex;
   position: sticky;
