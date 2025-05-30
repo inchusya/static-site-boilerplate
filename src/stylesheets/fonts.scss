@@ -30,25 +30,27 @@
   font-style: normal;
 }
 
+
 @font-face {
   font-family: 'Geologica';
   src: url('fonts/Geologica-Regular.ttf') format('ttf'),
-       url('fonts/Geologica-Regular.ttf') format('ttf');
+       url('fonts/Geologica-Regular.ttf') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Geologica';
   src: url('fonts/Geologica-Bold.ttf') format('ttf'),
-       url('fonts/Geologica-Bold.ttf') format('ttf');
+       url('fonts/Geologica-Bold.ttf') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
+
 @font-face {
   font-family: 'Geologica';
   src: url('fonts/Geologica_Cursive-Regular.ttf') format('ttf'),
-       url('fonts/Geologica_Cursive-Regular.ttf') format('ttf');
+       url('fonts/Geologica_Cursive-Regular.ttf') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
