@@ -108,6 +108,42 @@ nav ul {
 nav{
   margin-left: 20%;
 }
+  
+
+
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 35px;
+	padding: 15px 0 5px 0;
+	font-size: 24px;
+}
+ol li {
+	font-family: 'Geologica', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2E3341;
+	margin: 0 0 0 0;
+	padding: 0 0 30px 0;
+  list-style: decimal;
+  list-style-position: outside;
+  
+}
+li {
+  
+  display: list-item;
+  list-style-position: inside;
+}
+ol li::marker {
+	
+	left: -60px;
+	width: 50px;    
+	color: #00AF64;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
 
 a, h1, h2, h3 {
   font-family: 'Geologica', sans-serif;

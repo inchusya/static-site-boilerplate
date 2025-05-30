@@ -11,21 +11,33 @@
   top: 0;
   display: flex;
   align-items: center;
-  background-color: #FFFCF6;
+  background-color: #ccffd7;
 }
 .m_mainsection { grid-area: 2 / 3 / 3 / 15; 
     margin-top: 40px; }
 .m_navbarlogo { grid-area: 1 /3 / 2 / 2;
 
   margin-left: 0px;
-  margin-top: 20px; }
+  margin-top: 0px; }
 
 .m_cardsrow {grid-area: 3 / 3 / 4 / 16; }
-}
+
 .a_textblockmain {
    max-width: 1000px;
 }
+.manual-cards {
+    
 
+    .manual-card {
+        
+        width: 360px;
+        
+    
+    }
+   
+     
+    }
+}
   /* 
 @media only screen and (min-device-width: 1920px) and (max-device-width: 3000px) {
 
@@ -49,10 +61,20 @@
 .m_cardsrow {grid-area: 3 / 3 / 4 / 16; }
 }
 */
-@media only screen and (min-device-width: 1365px) and (max-device-width: 1440px) {}
+@media only screen and (min-device-width: 1365px) and (max-device-width: 1440px) {
+    .manual-cards .manual-card {
+
+        width: 24vw;
+        
+    }
+}
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-   
+    .manual-cards .manual-card {
+
+        width: 24vw;
+        
+    }
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1025px) {
@@ -185,8 +207,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-inline: -20px;
-        padding-inline: 20px;
+        margin-inline: -30px;
+        padding-inline: 30px;
     }
     nav ul {
         display: flex;
@@ -226,6 +248,20 @@
     }
     .manual-card-adaptive{
          gap: 10px;
+    }
+    .footerinside {
+        width: 100%;
+        left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+    .footertext {
+        
+        font-size: 18px;
     }
      /*
      nav {

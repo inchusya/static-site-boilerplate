@@ -485,11 +485,31 @@ var map = {
 	"./back_img_purple2.jpg": 1818,
 	"./back_img_purple3.jpg": 2373,
 	"./back_img_purple4.jpg": 5933,
+	"./colourimg1.svg": 5459,
+	"./colourimg3.svg": 7741,
+	"./colourimg4.svg": 6783,
+	"./colourimg5.svg": 4970,
+	"./contrastimg1.svg": 6394,
+	"./contrastimg2.svg": 8154,
+	"./contrastimg3.svg": 1370,
+	"./drawimg1.svg": 1694,
+	"./drawimg2.svg": 5369,
+	"./drawimg3.svg": 501,
 	"./favicon.png": 6878,
+	"./fontimg1.svg": 2524,
+	"./fontimg2.svg": 2354,
+	"./fontimg3.svg": 119,
+	"./fontimg4.svg": 6771,
 	"./greenlogo.svg": 547,
 	"./greenlogo1.svg": 3928,
 	"./grid-img1.jpg": 2970,
 	"./grid-img2.jpg": 5437,
+	"./gridimg1.jpg": 3555,
+	"./gridimg1.svg": 9333,
+	"./gridimg2.jpg": 8606,
+	"./gridimg2.svg": 6144,
+	"./gridimg3.jpg": 4046,
+	"./gridimg3.svg": 3688,
 	"./image.jpg": 1672,
 	"./image.png": 5442,
 	"./image.svg": 7221,
@@ -500,6 +520,10 @@ var map = {
 	"./m_leadimg5.jpg": 2518,
 	"./m_leadimg6.jpg": 8966,
 	"./m_leadimg7.jpg": 5048,
+	"./paletteimg1.svg": 8854,
+	"./paletteimg2.svg": 9620,
+	"./paletteimg3.svg": 1536,
+	"./pictureimg1.svg": 7478,
 	"./sp1.jpg": 8224,
 	"./sp10.jpg": 6647,
 	"./sp10comment.png": 794,
@@ -661,11 +685,123 @@ module.exports = __webpack_require__.p + "images/e0e7d33ba83f926aa1b3.jpg";
 
 /***/ }),
 
+/***/ 5459:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/9d1fdd44ba0311acaad1.svg";
+
+/***/ }),
+
+/***/ 7741:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/fc8ef75436bdfacdcab0.svg";
+
+/***/ }),
+
+/***/ 6783:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6337c29c828953b1ff1e.svg";
+
+/***/ }),
+
+/***/ 4970:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/f1bd432106fead375686.svg";
+
+/***/ }),
+
+/***/ 6394:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/9808c17b00a40bb824e1.svg";
+
+/***/ }),
+
+/***/ 8154:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1fe49865860cad3d912d.svg";
+
+/***/ }),
+
+/***/ 1370:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/edc9b3f3575267872b6a.svg";
+
+/***/ }),
+
+/***/ 1694:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/ea1f20fd52bcf32a3c70.svg";
+
+/***/ }),
+
+/***/ 5369:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/46e436fef146dcb71900.svg";
+
+/***/ }),
+
+/***/ 501:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/f7bca24ffb1c5681d499.svg";
+
+/***/ }),
+
 /***/ 6878:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/d7362c77e2a27ecab442.png";
+
+/***/ }),
+
+/***/ 2524:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/94b47f5d9f1cdd14bf0d.svg";
+
+/***/ }),
+
+/***/ 2354:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/67957d4837459f68cbad.svg";
+
+/***/ }),
+
+/***/ 119:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/0dfbc7df04a9125707ef.svg";
+
+/***/ }),
+
+/***/ 6771:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/eb4915a7aabb294ebe69.svg";
 
 /***/ }),
 
@@ -698,6 +834,54 @@ module.exports = __webpack_require__.p + "images/43d57a3174a1530e2805.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/911cd3becf1d74b3984a.jpg";
+
+/***/ }),
+
+/***/ 3555:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2c2dc01a5b4f6f990def.jpg";
+
+/***/ }),
+
+/***/ 9333:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b71731af77a808c4478f.svg";
+
+/***/ }),
+
+/***/ 8606:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/3fe526e6b4a66d953ce3.jpg";
+
+/***/ }),
+
+/***/ 6144:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1c00a1830ba1a64d6c99.svg";
+
+/***/ }),
+
+/***/ 4046:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/aff0cf77bb5deb9797e3.jpg";
+
+/***/ }),
+
+/***/ 3688:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/816d0edc232bc5249cfb.svg";
 
 /***/ }),
 
@@ -778,6 +962,38 @@ module.exports = __webpack_require__.p + "images/f679f0fd2b7c157a1e99.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/4e016f895118be4d5373.jpg";
+
+/***/ }),
+
+/***/ 8854:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/42aeeef096325681d7b3.svg";
+
+/***/ }),
+
+/***/ 9620:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/fa34b4f0009453155407.svg";
+
+/***/ }),
+
+/***/ 1536:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/51ef0430e0e01069c4a6.svg";
+
+/***/ }),
+
+/***/ 7478:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/ae956278aaa9a0258dc3.svg";
 
 /***/ }),
 
