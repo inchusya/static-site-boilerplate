@@ -169,10 +169,11 @@
         margin-top: 40px;
     }
     .m_chapternotes {
-        grid-area: 4 / 1 / 5 / 17;
+        
+        grid-area: 3 / 1 / 4 / 17;
     }
     .m_chaptertext {
-        grid-area: 3 / 1 / 4 / 17;
+        grid-area: 4 / 1 / 5 / 17;
     }
     nav {
         margin-left: 0;
@@ -192,11 +193,16 @@
       h2 { /* цитаты */
         font-size: 30px;
         padding-top: 20px;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
+        line-height: 130%;
       }
       a {
         font-size: 16px;
       }
+      .a_linkback {
+        font-size: 24px;
+       
+    }
       .m_navbarlogo {
         scale: 0.6;
         margin-top: 0px;
@@ -216,6 +222,17 @@
         cursor: pointer;
         text-decoration: none;
         font-size: 20px;
+    }
+    ol li {
+        
+        list-style-position: inside;
+    }
+    ol {
+        margin: 0px 0 0 0px; 
+    }
+    ol li::marker {
+       
+        font-size: 60px;
     }
     .m_postergrid {
         max-width: 90vw;
@@ -260,8 +277,19 @@
         gap: 30px;
     }
     .footertext {
-        
         font-size: 20px;
+    }
+    .a_linkchapter {
+        padding-bottom: 30px;
+        margin-top: 0;
+        padding-right: 0;
+        font-size: 24px;
+    }
+    .m_chapterlinks {
+        display: flex ;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
      /*
      nav {

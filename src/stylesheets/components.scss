@@ -45,7 +45,8 @@ width: 100%;
 }
 
 .a_chapterimgsmall{
-  padding: 0%;
+  padding-bottom: 10px;
+  padding-right: 20px;
   width: 46%;
   }
 // молекулки
@@ -114,7 +115,7 @@ z-index: -2;
   }
 }
 .m_posterpage{
-  max-width: 600px;
+  max-width: 30vw;
 }
 .m_postergridimg{
   border-width: 2px;
@@ -278,7 +279,12 @@ margin-inline: 30px;
   margin-top: 20px; }
 
 .m_cardsrow {grid-area: 3 / 1 / 4 / 17; }
-
+.m_postercomment {grid-area: 2 / 1 / 4 / 17; }
+.m_postercommentinside{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

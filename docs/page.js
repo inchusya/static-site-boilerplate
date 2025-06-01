@@ -525,6 +525,7 @@ var map = {
 	"./paletteimg3.svg": 1536,
 	"./pictureimg1.svg": 7478,
 	"./sp1.jpg": 8224,
+	"./sp1.svg": 459,
 	"./sp10.jpg": 6647,
 	"./sp10comment.png": 794,
 	"./sp10mini.jpg": 8757,
@@ -572,7 +573,10 @@ var map = {
 	"./sp8mini.jpg": 986,
 	"./sp9.jpg": 7390,
 	"./sp9comment.png": 397,
-	"./sp9mini.jpg": 2246
+	"./sp9mini.jpg": 2246,
+	"./spaceusingimg1.svg": 6007,
+	"./spaceusingimg2.svg": 3595,
+	"./visualnavigation1.svg": 7173
 };
 
 
@@ -1005,6 +1009,14 @@ module.exports = __webpack_require__.p + "images/4ab67c1a281b611a9d0b.jpg";
 
 /***/ }),
 
+/***/ 459:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b701969d14ff7a94b004.svg";
+
+/***/ }),
+
 /***/ 6647:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1386,6 +1398,30 @@ module.exports = __webpack_require__.p + "images/5d030dca4b93fd49a851.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/52319a3c0572e28c7410.jpg";
+
+/***/ }),
+
+/***/ 6007:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/cec545c0edbb315008d7.svg";
+
+/***/ }),
+
+/***/ 3595:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/4692541339b4032e6173.svg";
+
+/***/ }),
+
+/***/ 7173:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b8d2abf8bd64fd9e2320.svg";
 
 /***/ })
 
