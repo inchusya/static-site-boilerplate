@@ -1856,6 +1856,10 @@ document.addEventListener('DOMContentLoaded', function () {
     _root.render( /*#__PURE__*/react.createElement(PosterLibrary, null));
   }
 });
+
+window.setLanguage = function (lang) {
+  console.log('Установлен язык:', lang); // логика замены содержимого
+};
 })();
 
 /******/ })()

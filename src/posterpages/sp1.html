@@ -19,14 +19,19 @@
             <img src="../images/greenlogo1.svg" alt="Логотип">
           </a>
       </div>
-        <nav>
-          <ul>
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="../manual.html">Руководство</a></li>
-              <li><a href="../library.html">Библиотека</a></li>
-              <li><a href="../templates.html">Шаблоны</a></li>
-          </ul>
-      </nav>
+      <nav>
+        <ul>
+          <li><a data-lang="navmain" href="index.html">Главная</a></li>
+          <li><a data-lang="navman" href="../manual.html">Руководство</a></li>
+          <li><a data-lang="navlib" href="../library.html">Библиотека</a></li>
+          <li><a data-lang="navtemp" href="../templates.html">Шаблоны</a></li>
+        </ul>
+    </nav>
+    <div class="language-switcher">
+      <button id="lang-ru" class="a_langbutton" onclick="switchLang('ru')">РУС</button>
+      <button id="lang-en" onclick="switchLang('en')">ENG</button>
+    </div>
+
          </div>
       <div class="m_chaptername">
        

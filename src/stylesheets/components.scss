@@ -145,6 +145,27 @@ z-index: -2;
   align-content: center;
 }
 
+
+.language-switcher{
+  margin-left: 5%;
+  justify-content: center;
+}
+
+
+.language-switcher button {
+  background-color: transparent;
+  border: 0px solid #ccc;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: 0.2s;
+  
+}
+
+.language-switcher button.active {
+  background-color: #2E3341;
+  color: white;
+  border-color: #2E3341;
+}
 .template-buttons {
   display: flex;
     gap: 10px;

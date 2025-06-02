@@ -29,3 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root.render(<PosterLibrary />)
   }
 })
+window.setLanguage = function (lang) {
+  console.log('Установлен язык:', lang);
+  // логика замены содержимого
+};

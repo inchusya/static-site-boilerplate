@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>static-site-boilerplate library</title>
@@ -31,24 +32,33 @@
     </div>
     <nav>
       <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="./manual.html">Руководство</a></li>
-          <li><a href="./library.html">Библиотека</a></li>
-          <li><a href="./templates.html">Шаблоны</a></li>
+          <li><a data-lang="navmain" href="index.html">Главная</a></li>
+          <li><a data-lang="navman" href="./manual.html">Руководство</a></li>
+          <li><a data-lang="navlib" href="./library.html">Библиотека</a></li>
+          <li><a data-lang="navtemp" href="./templates.html">Шаблоны</a></li>
+          
       </ul>
+      
   </nav>
+  <div class="language-switcher">
+    <button id="lang-ru" class="a_langbutton" onclick="switchLang('ru')">РУС</button>
+    <button id="lang-en" onclick="switchLang('en')">ENG</button>
+  </div>
+ 
   </div>
   <div class="m_chaptername">
-    <h1>Библиотека</h1>
-      <p>В этом разделе мы собрали хорошие примеры постеров, наши специалисты оценили все постеры по категориям. Эстетичные плакаты яркие, привлекают внимание зрителей. Информативный может быть более содержательным. </p>  
-    <p>Библиотека рекулярно пополняется.</p>
+    
+   
+    <h1 data-lang="navlib" >Библиотека</h1>
+      <p data-lang="librarydescription" >В этом разделе мы собрали хорошие примеры постеров, наши специалисты оценили все постеры по категориям. Эстетичные плакаты яркие, привлекают внимание зрителей. Информативный может быть более содержательным. Библиотека рекулярно пополняется.</p>  
+
     </div>
   <div class="m_cardsrow ">
     <div class="m_filters">
-      <p>Сортировать по</p>
+      <p data-lang="sort">Сортировать по</p>
     <div class="m_filtersbtn">
-      <button class="a_filterbtn" data-filter="aesthetic">Эстетике</button>
-      <button class="a_filterbtn" data-filter="function">Информативности</button>
+      <button data-lang="sorta" class="a_filterbtn" data-filter="aesthetic">Эстетике</button>
+      <button data-lang="sorti" class="a_filterbtn" data-filter="function">Информативности</button>
       <button class="a_filterbtn" style="background-color: #FFFCF6;" data-filter="all"> ✕ </button>
     </div>
   </div>
@@ -200,11 +210,12 @@
 </div></div></div>
   <footer>
     <div class="footerinside">
-    <p class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
-    <p class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
-    <p class="footertext"> © 2025 Все права защищены</p>
+    <p data-lang="footer1" class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
+    <p data-lang="footer2" class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
+    <p data-lang="footer3" class="footertext"> © 2025 Все права защищены</p>
     </div>
   </footer>
   <script src="./scripts/library-filter.js"></script>
-</body>
+  <script src="lang.js"></script>
+  </body>
 </html>

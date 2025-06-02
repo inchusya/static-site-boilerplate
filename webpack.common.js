@@ -88,11 +88,20 @@ module.exports = {
     ]
   },
   plugins: [
+
+   
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/lang', to: 'lang' }]
+    }),
+
+    
+    
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
     }),
-   
+  
+    
     
     
 //нужно ли это/??
@@ -103,7 +112,7 @@ module.exports = {
       }),
    
 
-    
+      
     //////////
 
     // Landing page

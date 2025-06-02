@@ -20,16 +20,20 @@
     </div>
     <nav>
       <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="./manual.html">Руководство</a></li>
-          <li><a href="./library.html">Библиотека</a></li>
-          <li><a href="./templates.html">Шаблоны</a></li>
+        <li><a data-lang="navmain" href="index.html">Главная</a></li>
+        <li><a data-lang="navman" href="./manual.html">Руководство</a></li>
+        <li><a data-lang="navlib" href="./library.html">Библиотека</a></li>
+        <li><a data-lang="navtemp" href="./templates.html">Шаблоны</a></li>
       </ul>
   </nav>
+  <div class="language-switcher">
+    <button id="lang-ru" class="a_langbutton" onclick="switchLang('ru')">РУС</button>
+    <button id="lang-en" onclick="switchLang('en')">ENG</button>
+  </div>
   </div>
   <div class="m_chaptername">
-    <h1>Шаблоны</h1>
-    <p class="a_textblock">Шаблоны — это предварительно подготовленные файлы с установленной сеткой, форматами текста, цветовыми схемами и элементами дизайна. Они представляют собой основу для быстрого и удобного оформления научного материала, позволяя минимизировать ошибки и стандартизировать внешний вид.</p>
+    <h1 data-lang="navtemp" >Шаблоны</h1>
+    <p  data-lang="tempdiscr" class="a_textblock">Шаблоны — это предварительно подготовленные файлы с установленной сеткой, форматами текста, цветовыми схемами и элементами дизайна. Они представляют собой основу для быстрого и удобного оформления научного материала, позволяя минимизировать ошибки и стандартизировать внешний вид.</p>
 </div>
   <div class="m_cardsrow ">
 
@@ -87,9 +91,9 @@
     <div> 
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template1.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-1.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-1.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/17SVrXFAoAjsxcY6MJmeDztoF4tHxn6ecGaiSU8eqiew/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-1.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-1.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/17SVrXFAoAjsxcY6MJmeDztoF4tHxn6ecGaiSU8eqiew/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -97,9 +101,9 @@
     <div> 
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template1.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-1.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-1.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/17SVrXFAoAjsxcY6MJmeDztoF4tHxn6ecGaiSU8eqiew/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-1.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-1.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/17SVrXFAoAjsxcY6MJmeDztoF4tHxn6ecGaiSU8eqiew/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -107,9 +111,9 @@
     <div> 
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template1.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-1.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-1.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/17SVrXFAoAjsxcY6MJmeDztoF4tHxn6ecGaiSU8eqiew/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-1.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-1.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/17SVrXFAoAjsxcY6MJmeDztoF4tHxn6ecGaiSU8eqiew/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -119,9 +123,9 @@
        
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template2.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-2.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-2.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/1MripC_irYd4SbrSMNVcxXMwlcGiThc29eWf3UrNXerU/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-2.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-2.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/1MripC_irYd4SbrSMNVcxXMwlcGiThc29eWf3UrNXerU/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -131,9 +135,9 @@
        
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template3.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-3.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-3.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/1XDgZg6QDcOt_9gRzRlrjyz8_GEh-a5T7PnNFjVgs7cY/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-3.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-3.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/1XDgZg6QDcOt_9gRzRlrjyz8_GEh-a5T7PnNFjVgs7cY/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -143,9 +147,9 @@
        
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template4.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-4.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-4.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/1E0iLF2w-jIzYMR9pAG9BmXj9E1Ov7F6BCM4DNVQ6HN0/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-4.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-4.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/1E0iLF2w-jIzYMR9pAG9BmXj9E1Ov7F6BCM4DNVQ6HN0/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -155,9 +159,9 @@
        
       <div class="m_postergrid"> <img class="m_postergrid" style='border:2px solid #ccced1' src="./templatesfiles/img-template5.jpg" alt=""></div>
       <div class="template-buttons">
-        <a href="./templatesfiles/Poster-Template-5.pdf" download class="btn">📄 Скачать PDF</a>
-        <a href="./templatesfiles/Poster-Template-5.pptx" download class="btn">📊 Скачать PPTX</a>
-        <a href="https://docs.google.com/presentation/d/1vHeTqLV9NYM_Ne7-1CZzKtMlo6MEh4QZy2ANdf6zoa0/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
+        <a data-lang="downloadpdf" href="./templatesfiles/Poster-Template-5.pdf" download class="btn">📄 Скачать PDF</a>
+        <a data-lang="downloadpptx" href="./templatesfiles/Poster-Template-5.pptx" download class="btn">📊 Скачать PPTX</a>
+        <a data-lang="downloadgs" href="https://docs.google.com/presentation/d/1vHeTqLV9NYM_Ne7-1CZzKtMlo6MEh4QZy2ANdf6zoa0/copy?usp=sharing" target="_blank" class="btn">🌐 Копировать Google Slides</a>
       </div>
       
       </a>
@@ -166,10 +170,11 @@
 </div></div></div> <div> 
 <footer>
       <div class="footerinside">
-      <p class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
-      <p class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
-      <p class="footertext"> © 2025 Все права защищены</p>
+        <p data-lang="footer1" class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
+        <p data-lang="footer2" class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
+        <p data-lang="footer3" class="footertext"> © 2025 Все права защищены</p>
       </div>
     </footer>
+    <script src="lang.js"></script>
   </body>
 </html>

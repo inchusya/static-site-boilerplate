@@ -23,26 +23,30 @@
       </div>
       <nav>
         <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="./manual.html">Руководство</a></li>
-            <li><a href="./library.html">Библиотека</a></li>
-            <li><a href="./templates.html">Шаблоны</a></li>
+          <li><a data-lang="navmain" href="index.html">Главная</a></li>
+          <li><a data-lang="navman" href="./manual.html">Руководство</a></li>
+          <li><a data-lang="navlib" href="./library.html">Библиотека</a></li>
+          <li><a data-lang="navtemp" href="./templates.html">Шаблоны</a></li>
         </ul>
     </nav>
+    <div class="language-switcher">
+      <button id="lang-ru" class="a_langbutton" onclick="switchLang('ru')">РУС</button>
+      <button id="lang-en" onclick="switchLang('en')">ENG</button>
+    </div>
     </div>
     <div class="m_chaptername">
-      <h1>Руководство</h1>
-        <p class="a_textblock">Эта методичка поможет вам создать эффективный и профессиональный научный постер для конференций и симпозиумов. В нем пошагово изложены ключевые аспекты разработки постеров, от выбора темы и структуры до дизайна и визуальной презентации данных.</p>
+      <h1 data-lang="navman">Руководство</h1>
+        <p data-lang="mainp2" class="a_textblock">Эта методичка поможет вам создать эффективный и профессиональный научный постер для конференций и симпозиумов. В нем пошагово изложены ключевые аспекты разработки постеров, от выбора темы и структуры до дизайна и визуальной презентации данных.</p>
     </div>
     <div class="m_cardsrow">
-      <h2> С чего начать</h2>
+      <h2 data-lang="cardsh2start"> С чего начать</h2>
       <div  class="manual-cards">
         <a href="./start.html" class="manual-card" class="manual-card-adaptive" style="background-color: #98B2FF;">
            
           <div> <img class="manual-card-image" src="./images/back_img_purple1.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Для чего вам плакат?</h3>
-            <p>Почему стоит вкладываться в создание плаката?</p>
+            <h3 data-lang="cardh1" >Для чего вам плакат?</h3>
+            <p data-lang="cardp1">Почему стоит вкладываться в создание плаката?</p>
           </div>
         </a>
       
@@ -50,88 +54,88 @@
            
           <div> <img class="manual-card-image" src="./images/back_img_purple2.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Выборка материала</h3>
-            <p>Отобрать материал из вашего готового исследования</p>
+            <h3 data-lang="cardh2" >Выборка материала</h3>
+            <p data-lang="cardp2" >Отобрать материал из вашего готового исследования</p>
           </div>
         </a>
         <a href="./list.html" class="manual-card" class="manual-card-adaptive" style="background-color: #98B2FF;">
            
           <div> <img class="manual-card-image" src="./images/back_img_purple3.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Презентация плаката</h3>
-            <p>Как хорошо защитить плакат на конференции</p>
+            <h3 data-lang="cardh3">Презентация постера</h3>
+            <p data-lang="cardp3" >Как хорошо защитить плакат на конференции</p>
           </div>
         </a>
         <a href="./mistakes.html" class="manual-card"  class="manual-card-adaptive" style="background-color: #98B2FF;">
            
           <div> <img class="manual-card-image" src="./images/back_img_purple4.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Частые ошибки</h3>
-            <p>Самые распрстраненные ошибки и как их исправть</p>
+            <h3 data-lang="cardh4" >Частые ошибки</h3>
+            <p data-lang="cardp3">Самые распрстраненные ошибки и как их исправть</p>
           </div>
         </a>
       </div>
-      <h2>Композиция</h2>
+      <h2 data-lang="cardsh2compos" >Композиция</h2>
       <div class="manual-cards">
         <a href="./visual-navigation.html" class="manual-card " class="manual-card-adaptive" style="background-color: #99DFA8;">
            
           <div> <img class="manual-card-image" src="./images/back_img_green1.jpg" alt=""></div>
           <div class="manual-card-content card-green">
-            <h3>Принципы визуальной навигации</h3>
-            <p>Как правильно управлять вниманием</p>
+            <h3 data-lang="cardh5" >Принципы визуальной навигации</h3>
+            <p data-lang="cardp5" >Как правильно управлять вниманием</p>
           </div>
         </a>
         <a href="./space-using.html" class="manual-card" class="manual-card-adaptive" style="background-color: #99DFA8;">
            
           <div> <img class="manual-card-image" src="./images/back_img_green2.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Роль пространства</h3>
-            <p>Соотношение элементов и пустого пространства</p>
+            <h3 data-lang="cardh6">Роль пространства</h3>
+            <p data-lang="cardp6">Соотношение элементов и пустого пространства</p>
           </div>
         </a>
         <a href="./grids.html" class="manual-card" class="manual-card-adaptive" style="background-color: #99DFA8;">
            
           <div> <img class="manual-card-image" src="./images/back_img_green3.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Модульные сетки</h3>
-            <p>Как правильно настроить количество и ширину колонок</p>
+            <h3 data-lang="cardh7" >Модульные сетки</h3>
+            <p data-lang="cardp7" >Как правильно настроить количество и ширину колонок</p>
           </div>
         </a>
        
       </div>
       
-      <h2>Графика и Типографика</h2>
+      <h2 data-lang="cardsh2typog" >Графика и Типографика</h2>
       <div class="manual-cards">
         <a href="./fonts.html" class="manual-card" class="manual-card-adaptive" style="background-color: #3FB4D6;">
            
           <div> <img class="manual-card-image" src="./images/back_img_blue1.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Шрифт и текст</h3>
-            <p>Как выбрать подходящий шрифт и его размер</p>
+            <h3 data-lang="cardh8">Шрифт и текст</h3>
+            <p data-lang="cardp8">Как выбрать подходящий шрифт и его размер</p>
           </div>
         </a>
         <a href="./colour.html" class="manual-card" class="manual-card-adaptive" style="background-color: #3FB4D6;">
            
           <div> <img class="manual-card-image" src="./images/back_img_blue2.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Цвет и контраст</h3>
-            <p>Как работает соотношение цветов и их насыщенности</p>
+            <h3 data-lang="cardh9">Цвет и контраст</h3>
+            <p data-lang="cardp9">Как работает соотношение цветов и их насыщенности</p>
           </div>
         </a>
         <a href="./palette.html" class="manual-card" class="manual-card-adaptive" style="background-color: #3FB4D6;">
            
           <div> <img class="manual-card-image" src="./images/back_img_blue3.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Выбор палитры</h3>
-            <p>Как подобрать понятные, удобные и красивые цвета</p>
+            <h3 data-lang="cardh10">Выбор палитры</h3>
+            <p data-lang="cardp10" >Как подобрать понятные, удобные и красивые цвета</p>
           </div>
         </a>
         <a href="./pictures.html" class="manual-card" class="manual-card-adaptive" style="background-color: #3FB4D6;">
            
           <div> <img class="manual-card-image" src="./images/back_img_blue4.jpg" alt=""></div>
           <div class="manual-card-content">
-            <h3>Картинки и фото</h3>
-            <p>Рекомендации по выбору графиков и их оформление в плакате</p>
+            <h3 data-lang="cardh11" >Картинки и фото</h3>
+            <p data-lang="cardp11">Рекомендации по выбору графиков и их оформление в плакате</p>
           </div>
         </a>
       </div>
@@ -141,10 +145,11 @@
     </div>
     <footer>
       <div class="footerinside">
-      <p class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
-      <p class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
-      <p class="footertext"> © 2025 Все права защищены</p>
+        <p data-lang="footer1" class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
+        <p data-lang="footer2" class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
+        <p data-lang="footer3" class="footertext"> © 2025 Все права защищены</p>
       </div>
     </footer>
+    <script src="lang.js"></script>
   </body>
 </html>
