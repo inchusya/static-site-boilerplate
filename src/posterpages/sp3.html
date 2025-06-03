@@ -9,68 +9,56 @@
   </head>
 
   <body class="index">
-    <div class="a_headerlogo">
-      <a class="a_headerlogoimg" href="index.html">
-          <img src="../images/greenlogo1.svg" alt="Логотип">
-      </a>
-    </div>
-    <header>
-      <nav>
-          <ul>
-              <li><a href="index.html">О нас</a></li>
-              <li><a href="../manual.html">Руководство</a></li>
-              <li><a href="../library.html">Библиотека</a></li>
-              <li><a href="../templates.html">Шаблоны</a></li>
-          </ul>
-      </nav>
-  </header> 
- 
-
-  <div class="so_manualpage">
-    <div class="o_pagetexts">
-      
-
-      <a href="../library.html">← Все плакаты</a>
-      <a class="a_linkchapter" href="./sp2.html">←Предыдущий</a>
-      <a class="a_linkchapter" href="./sp4.html">Следующий→</a>
-    </div>
-   
-
-  </div>
-  
-  
-
-  <div class="so_manualpage">
     
-    <div class="o_manualpageleft">
-      
-        <div class="m_postergrid"> 
-       <img class="m_posterpage m_posterhide" src="../images/sp3comment.png" alt="">
-       <img class="m_posterpage" src="../images/sp3.jpg" alt="">
-       
 
-       </div>
+        <div class="o_pagegrid">
+          <div class="m_navbar">
+            <div class="m_navbarlogo">
+              <a href="index.html">
+                <img src="../images/greenlogo1.svg" data-lang-src='{"ru": "/images/greenlogo1.svg", "en": "/images/greenlogo2.svg"}'>
+              </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a data-lang="navmain" href="index.html">Главная</a></li>
+              <li><a data-lang="navman" href="../manual.html">Руководство</a></li>
+              <li><a data-lang="navlib" href="../library.html">Библиотека</a></li>
+              <li><a data-lang="navtemp" href="../templates.html">Шаблоны</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+          <button id="lang-ru" class="a_langbutton" onclick="switchLang('ru')">РУС</button>
+          <button id="lang-en" onclick="switchLang('en')">ENG</button>
+        </div>
+             </div>
+          <div class="m_chaptername">
+            <a href="../library.html">← Все плакаты</a> 
+           
+            
+            </div>
+          <div class="m_chapterposter">
+            <div class="m_chapterlinks"> 
+              <a data-lang="backposter" href="./sp2.html">← Предыдущий плакат</a>
+              <a data-lang="goposter" href="./sp4.html" >Следующий плакат→</a>
+              </div>
+            <img class="m_posterpage m_posterhide" src="../images/sp3ru.jpg" data-lang-src='{"ru": "../images/sp3ru.jpg", "en": "../images/sp3eng.jpg"}'>
+            <img class="m_posterpage" src="../images/sp3.jpg" >           
+          </div>
+          <div class="m_chapternotes"> 
+            
+            <h4>Здесь чётко видна работа с акцентами: заголовки, ключевые цифры и визуальные метки мгновенно привлекают внимание. Автор использует модульную сетку, которая помогает выстроить ясную логику повествования. Обилие воздуха вокруг блоков облегчает восприятие сложных данных и снижает визуальную нагрузку.</h4>
+        </div>
+            </div>
 
-
-
-
-
-      
-    </div>
-    <div class="o_manualpageright">
-      <h4>Постер выполнен в минималистичном стиле, что подчеркивает ясность и доступность представленной информации. Основные разделы — гипотеза, методы, результаты и обсуждение — логично выстроены и визуально выделены цветом и типографикой. Заголовок крупный и читаемый, обеспечивая внимание к теме исследования с первого взгляда. Сетка с тремя равными колонками и фиксированными отступами помогает поддерживать строгую и аккуратную компоновку элементов, что делает плакат гармоничным и удобным для быстрого изучения.</h4>
-      <h4> </h4>
-      <h4> </h4>
-      <h4> </h4>
-      
-      </div>
-    </div>
-    <footer>
-      <div class="footerinside">
-      <p class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
-      <p class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
-      <p class="footertext"> © 2025 Все права защищены</p>
-      </div>
-    </footer>
+            <footer>
+              <div class="footerinside">
+                <p data-lang="footer1" class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
+                <p data-lang="footer2" class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
+                <p data-lang="footer3" class="footertext"> © 2025 Все права защищены</p>
+              </div>
+            </footer>
+            <script src="../lang.js"></script>
+    
   </body>
 </html>
+

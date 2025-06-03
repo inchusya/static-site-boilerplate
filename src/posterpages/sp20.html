@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>static-site-boilerplate chapter_one</title>
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../stylesheets/components.scss" type="text/scss">
+    <analytics></analytics>
+  </head>
+
+  <body class="index">
+    
+
+        <div class="o_pagegrid">
+          <div class="m_navbar">
+            <div class="m_navbarlogo">
+              <a href="index.html">
+                <img src="../images/greenlogo1.svg" data-lang-src='{"ru": "/images/greenlogo1.svg", "en": "/images/greenlogo2.svg"}'>
+              </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a data-lang="navmain" href="index.html">Главная</a></li>
+              <li><a data-lang="navman" href="../manual.html">Руководство</a></li>
+              <li><a data-lang="navlib" href="../library.html">Библиотека</a></li>
+              <li><a data-lang="navtemp" href="../templates.html">Шаблоны</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+          <button id="lang-ru" class="a_langbutton" onclick="switchLang('ru')">РУС</button>
+          <button id="lang-en" onclick="switchLang('en')">ENG</button>
+        </div>
+             </div>
+          <div class="m_chaptername">
+            <a href="../library.html">← Все плакаты</a> 
+           
+            
+            </div>
+          <div class="m_chapterposter">
+            <div class="m_chapterlinks"> 
+              <a data-lang="backposter" href="./sp19.html">← Предыдущий плакат</a>
+              <a data-lang="goposter" href="./sp21.html" >Следующий плакат→</a>
+              </div>
+            <img class="m_posterpage m_posterhide" src="../images/sp20ru.jpg" data-lang-src='{"ru": "../images/sp20ru.jpg", "en": "../images/sp20eng.jpg"}'>
+            <img class="m_posterpage" src="../images/sp20.jpg" >           
+          </div>
+          <div class="m_chapternotes"> 
+            
+            <h4>Постер решён в минималистичном стиле, без лишнего декора. Благодаря этому вся энергия направлена на восприятие сути исследования. Используемая цветовая палитра сдержанна, но достаточно контрастна для выделения важных акцентов. Графики имеют одинаковый стиль, что придаёт постеру цельность.</h4>
+        </div>
+            </div>
+
+            <footer>
+              <div class="footerinside">
+                <p data-lang="footer1" class="footertext">Эффиктивная наука <br />  начинается с понятного плаката</p>
+                <p data-lang="footer2" class="footertext">HSE ADC <br/> Инна Косульникова, Захар День</p>
+                <p data-lang="footer3" class="footertext"> © 2025 Все права защищены</p>
+              </div>
+            </footer>
+            <script src="../lang.js"></script>
+    
+  </body>
+</html>
+

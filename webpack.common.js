@@ -371,6 +371,77 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/posterpages/sp16.html',
+      filename: 'sp16.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp17.html',
+      filename: 'sp17.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp18.html',
+      filename: 'sp18.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp19.html',
+      filename: 'sp19.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp20.html',
+      filename: 'sp20.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp21.html',
+      filename: 'sp21.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp22.html',
+      filename: 'sp22.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp23.html',
+      filename: 'sp23.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp24.html',
+      filename: 'sp24.html',
+      chunks: ['page']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/posterpages/sp25.html',
+      filename: 'sp25.html',
+      chunks: ['page']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/templates.html',
       filename: 'templates.html',
       chunks: ['page']
