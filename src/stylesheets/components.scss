@@ -127,8 +127,7 @@ z-index: -2;
   opacity: 0;
   transition: opacity 0.15s ease-in-out;
   cursor: pointer;
-  backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px); 
+ 
 
 }
 .m_posterhide:hover  {
@@ -278,7 +277,7 @@ margin-inline: 30px;
 .m_mainsection { grid-area: 2 / 5 / 3 / 13; 
   margin-top: 40px; }
 
-.m_chapterposter {grid-area: 3 / 6 / 4 / 12; }
+.m_chapterposter {grid-area: 3 / 6 / 4 / 11; }
 .m_notesposter {grid-area: 3 / 1 / 4 / 6; }
 .m_sideposter {grid-area: 3 / 12 / 4 / 17; }
 .m_navbar { grid-area: 1 / 1 / 1 / 17; 

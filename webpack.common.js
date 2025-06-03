@@ -34,12 +34,20 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-class-properties']
+            plugins: ['@babel/plugin-proposal-class-properties'],
+           
+
           }
         }
     
       },
-
+      {
+        test: /\.svg$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        }
+      },
       {
         test: /\.(pdf|pptx|docx)$/,
         type: 'asset/resource',
@@ -94,7 +102,15 @@ module.exports = {
       patterns: [{ from: 'src/lang', to: 'lang' }]
     }),
 
-    
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/images',  // Откуда копировать
+          to: 'images',        // Куда (относительно output.path)
+          noErrorOnMissing: true,
+        },
+      ],
+    }),
     
     new MiniCssExtractPlugin({
       filename: '[name].css',

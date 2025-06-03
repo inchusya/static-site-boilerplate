@@ -1,5 +1,8 @@
+
 const translations = {
+    
     ru: {
+       logoKey: 'greenlogo1',
       // any page
       navmain: "Главная",
       navman: "Руководство",
@@ -190,12 +193,12 @@ const translations = {
        visualh2: "Читателю должно быть понятно, с чего начать и куда двигаться взглядом. Используйте заголовки, отступы, цветовые акценты и стрелки, чтобы направить внимание. Один постер — одна история, изложенная логично и последовательно.",
        visualh3: "Заголовок виден издалека, он может дать понять, о чем плакат. График или иллюстрация тоже заметен с большого расстояния и может заинтересовать.",
        visualh4: "Важная часть визуальной навигации — иерархия. Человек читает текст не совсем в пордке его расположения в листе, а по степени визуальной важности.",
-
-    
+      
+       goposter: "Следующий плакат →",
+       backposter: "← Предыдущий плакат",
     },
     en: {
-        
-
+        logoKey: 'greenlogo1',
         // any page
         navmain: "About",
         navman: "Manual",
@@ -207,7 +210,7 @@ const translations = {
       
 
       // main
-      mainh1: "Encyclopedia of Scientific Posters",
+      mainh1: "Encyclopedia of Scientific Poster",
       mainp1: "This is an online guide to creating scientific posters, from content selection to visual design. We have compiled best practices, tips, templates and examples so that you can focus on the main thing: your idea. The website will help students, researchers and teachers to design an understandable, convincing and beautiful poster for a conference or poster session. Posters are a tool of scientific communication. Let's use it really effectively.",
       mainp2: "This tutorial will help you create an effective and professional scientific poster for conferences and symposiums. It outlines the key aspects of poster development step by step, from the choice of theme and structure to the design and visual presentation of the data.",
       mainh31: "Why do you need a poster",
@@ -390,8 +393,8 @@ const translations = {
 
 
 
-
-
+       goposter: "Next poster →",
+       backposter: "←Previous poster",
 
 
 
@@ -405,11 +408,13 @@ const translations = {
           
     },
   };
-  
+
+/*
   function applyLang(lang) {
     const dict = translations[lang];
     if (!dict) return;
   
+    // Обновляем текстовые элементы
     document.querySelectorAll("[data-lang]").forEach((el) => {
       const key = el.getAttribute("data-lang");
       if (dict[key]) {
@@ -417,13 +422,65 @@ const translations = {
       }
     });
   
+  
+  
+    // Обновляем атрибут lang и сохраняем выбор
     document.documentElement.lang = lang;
     localStorage.setItem("lang", lang);
   
     // Управляем классом active для кнопок
-    document.querySelectorAll(".language-switcher button").forEach((btn) =>
-      btn.classList.remove("active")
-    );
+    document.querySelectorAll(".language-switcher button").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    const activeBtn = document.getElementById(`lang-${lang}`);
+    if (activeBtn) {
+      activeBtn.classList.add("active");
+    }
+  }
+  
+  function switchLang(lang) {
+    applyLang(lang);
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("lang") || "ru";
+    applyLang(saved);
+  });
+  */
+
+
+
+
+
+  function applyLang(lang) {
+    const dict = translations[lang];
+    if (!dict) return;
+  
+    // Заменяем текст
+    document.querySelectorAll("[data-lang]").forEach((el) => {
+      const key = el.getAttribute("data-lang");
+      if (dict[key]) {
+        el.textContent = dict[key];
+      }
+    });
+  
+   // Замена изображений
+  document.querySelectorAll("[data-lang-src]").forEach((img) => {
+    const srcDict = JSON.parse(img.getAttribute("data-lang-src"));
+    if (srcDict[lang]) {
+      img.src = srcDict[lang]; // Просто подставляем путь из JSON
+    }
+  });
+
+  
+    // Сохраняем язык и устанавливаем <html lang="...">
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
+  
+    // Кнопки active
+    document.querySelectorAll(".language-switcher button").forEach((btn) => {
+      btn.classList.remove("active");
+    });
     const activeBtn = document.getElementById(`lang-${lang}`);
     if (activeBtn) {
       activeBtn.classList.add("active");

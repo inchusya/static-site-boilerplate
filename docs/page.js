@@ -502,6 +502,7 @@ var map = {
 	"./fontimg4.svg": 6771,
 	"./greenlogo.svg": 547,
 	"./greenlogo1.svg": 3928,
+	"./greenlogo2.svg": 716,
 	"./grid-img1.jpg": 2970,
 	"./grid-img2.jpg": 5437,
 	"./gridimg1.jpg": 3555,
@@ -530,8 +531,14 @@ var map = {
 	"./sp10comment.png": 794,
 	"./sp10mini.jpg": 8757,
 	"./sp11.jpg": 4191,
+	"./sp11.svg": 6011,
 	"./sp11comment.png": 3088,
+	"./sp11eng.jpg": 3102,
+	"./sp11eng.svg": 1563,
 	"./sp11mini.jpg": 7552,
+	"./sp11mini.svg": 3683,
+	"./sp11ru.jpg": 1114,
+	"./sp11ru.svg": 9568,
 	"./sp12.jpg": 448,
 	"./sp12comment.png": 5641,
 	"./sp12mini.jpg": 7081,
@@ -557,12 +564,15 @@ var map = {
 	"./sp3mini.png": 3109,
 	"./sp3mini1.jpg": 7984,
 	"./sp4.jpg": 8269,
+	"./sp44comment.png": 7703,
 	"./sp4comment.png": 9272,
 	"./sp4mini.jpg": 8084,
 	"./sp5.jpg": 295,
 	"./sp5comment.png": 2464,
 	"./sp5mini.jpg": 7578,
 	"./sp6.jpg": 2120,
+	"./sp666comment.png": 7576,
+	"./sp66comment.png": 3607,
 	"./sp6comment.png": 5314,
 	"./sp6mini.jpg": 5809,
 	"./sp7.jpg": 9763,
@@ -576,7 +586,8 @@ var map = {
 	"./sp9mini.jpg": 2246,
 	"./spaceusingimg1.svg": 6007,
 	"./spaceusingimg2.svg": 3595,
-	"./visualnavigation1.svg": 7173
+	"./visualnavigation1.svg": 7173,
+	"./visualnavigation1en.svg": 4345
 };
 
 
@@ -821,7 +832,15 @@ module.exports = __webpack_require__.p + "images/3c972c87e2228a235168.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/e7538136ba9c9ca2cda1.svg";
+module.exports = __webpack_require__.p + "images/d32e2cf97b631ab98344.svg";
+
+/***/ }),
+
+/***/ 716:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/21d2e3e89b6777404d31.svg";
 
 /***/ }),
 
@@ -1049,6 +1068,14 @@ module.exports = __webpack_require__.p + "images/e332f16089cb26166704.jpg";
 
 /***/ }),
 
+/***/ 6011:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/05251fdbfaf5f986d1d8.svg";
+
+/***/ }),
+
 /***/ 3088:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1057,11 +1084,51 @@ module.exports = __webpack_require__.p + "images/9116a206786a6533977c.png";
 
 /***/ }),
 
+/***/ 3102:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/8aa51a5a133546d27d37.jpg";
+
+/***/ }),
+
+/***/ 1563:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/4ef13abbf120fbcd386d.svg";
+
+/***/ }),
+
 /***/ 7552:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/94affb0bc12506a093c3.jpg";
+
+/***/ }),
+
+/***/ 3683:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/d696e8775aa86fd63c14.svg";
+
+/***/ }),
+
+/***/ 1114:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/0fcefeda9bd4192149b7.jpg";
+
+/***/ }),
+
+/***/ 9568:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/e2fd48c827586bd32993.svg";
 
 /***/ }),
 
@@ -1265,6 +1332,14 @@ module.exports = __webpack_require__.p + "images/75614dd8ff2ac43169cc.jpg";
 
 /***/ }),
 
+/***/ 7703:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/ac3173609a05d00c5e7d.png";
+
+/***/ }),
+
 /***/ 9272:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1310,6 +1385,22 @@ module.exports = __webpack_require__.p + "images/798e2c7e6f9bd9c672f0.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/abd045530b1c0da4d7f3.jpg";
+
+/***/ }),
+
+/***/ 7576:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1ad9ea9d21b55a4d73e0.png";
+
+/***/ }),
+
+/***/ 3607:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/df34f83de87a95defb6d.png";
 
 /***/ }),
 
@@ -1422,6 +1513,14 @@ module.exports = __webpack_require__.p + "images/4692541339b4032e6173.svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/b8d2abf8bd64fd9e2320.svg";
+
+/***/ }),
+
+/***/ 4345:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2745773b6ef6df321d52.svg";
 
 /***/ })
 

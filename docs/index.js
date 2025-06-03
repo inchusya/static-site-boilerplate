@@ -6,6 +6,7 @@
 
 var translations = {
   ru: {
+    logoKey: 'greenlogo1',
     // any page
     navmain: "Главная",
     navman: "Руководство",
@@ -173,9 +174,12 @@ var translations = {
     visualh1: "Ваша задача — направить взгляд аудитории",
     visualh2: "Читателю должно быть понятно, с чего начать и куда двигаться взглядом. Используйте заголовки, отступы, цветовые акценты и стрелки, чтобы направить внимание. Один постер — одна история, изложенная логично и последовательно.",
     visualh3: "Заголовок виден издалека, он может дать понять, о чем плакат. График или иллюстрация тоже заметен с большого расстояния и может заинтересовать.",
-    visualh4: "Важная часть визуальной навигации — иерархия. Человек читает текст не совсем в пордке его расположения в листе, а по степени визуальной важности."
+    visualh4: "Важная часть визуальной навигации — иерархия. Человек читает текст не совсем в пордке его расположения в листе, а по степени визуальной важности.",
+    goposter: "Следующий плакат →",
+    backposter: "← Предыдущий плакат"
   },
   en: {
+    logoKey: 'greenlogo1',
     // any page
     navmain: "About",
     navman: "Manual",
@@ -185,7 +189,7 @@ var translations = {
     footer2: "HSE ADC Inna Kosulnikova, Zakhar day",
     footer3: "© 2025 All rights reserved",
     // main
-    mainh1: "Encyclopedia of Scientific Posters",
+    mainh1: "Encyclopedia of Scientific Poster",
     mainp1: "This is an online guide to creating scientific posters, from content selection to visual design. We have compiled best practices, tips, templates and examples so that you can focus on the main thing: your idea. The website will help students, researchers and teachers to design an understandable, convincing and beautiful poster for a conference or poster session. Posters are a tool of scientific communication. Let's use it really effectively.",
     mainp2: "This tutorial will help you create an effective and professional scientific poster for conferences and symposiums. It outlines the key aspects of poster development step by step, from the choice of theme and structure to the design and visual presentation of the data.",
     mainh31: "Why do you need a poster",
@@ -343,25 +347,75 @@ var translations = {
     visualh1: "Your task is to direct the audience's gaze.",
     visualh2: "It should be clear to the reader where to start and where to look. Use headings, indents, color accents, and arrows to direct attention. One poster is one story, presented logically and consistently.",
     visualh3: "The headline is visible from afar, it can make it clear what the poster is about. A graph or illustration is also noticeable from a long distance and may be of interest.",
-    visualh4: "Hierarchy is an important part of visual navigation. A person reads a text not exactly in the order of its location in the sheet, but according to the degree of visual importance."
+    visualh4: "Hierarchy is an important part of visual navigation. A person reads a text not exactly in the order of its location in the sheet, but according to the degree of visual importance.",
+    goposter: "Next poster →",
+    backposter: "←Previous poster"
   }
 };
+/*
+  function applyLang(lang) {
+    const dict = translations[lang];
+    if (!dict) return;
+  
+    // Обновляем текстовые элементы
+    document.querySelectorAll("[data-lang]").forEach((el) => {
+      const key = el.getAttribute("data-lang");
+      if (dict[key]) {
+        el.textContent = dict[key];
+      }
+    });
+  
+  
+  
+    // Обновляем атрибут lang и сохраняем выбор
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
+  
+    // Управляем классом active для кнопок
+    document.querySelectorAll(".language-switcher button").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    const activeBtn = document.getElementById(`lang-${lang}`);
+    if (activeBtn) {
+      activeBtn.classList.add("active");
+    }
+  }
+  
+  function switchLang(lang) {
+    applyLang(lang);
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("lang") || "ru";
+    applyLang(saved);
+  });
+  */
 
 function applyLang(lang) {
   var dict = translations[lang];
-  if (!dict) return;
+  if (!dict) return; // Заменяем текст
+
   document.querySelectorAll("[data-lang]").forEach(function (el) {
     var key = el.getAttribute("data-lang");
 
     if (dict[key]) {
       el.textContent = dict[key];
     }
-  });
+  }); // Замена изображений
+
+  document.querySelectorAll("[data-lang-src]").forEach(function (img) {
+    var srcDict = JSON.parse(img.getAttribute("data-lang-src"));
+
+    if (srcDict[lang]) {
+      img.src = srcDict[lang]; // Просто подставляем путь из JSON
+    }
+  }); // Сохраняем язык и устанавливаем <html lang="...">
+
   document.documentElement.lang = lang;
-  localStorage.setItem("lang", lang); // Управляем классом active для кнопок
+  localStorage.setItem("lang", lang); // Кнопки active
 
   document.querySelectorAll(".language-switcher button").forEach(function (btn) {
-    return btn.classList.remove("active");
+    btn.classList.remove("active");
   });
   var activeBtn = document.getElementById("lang-".concat(lang));
 
@@ -451,32 +505,56 @@ const image_namespaceObject = __webpack_require__.p + "images/6373cac8eccfb40124
 // EXTERNAL MODULE: ./src/lang.js
 var lang = __webpack_require__(7210);
 ;// CONCATENATED MODULE: ./src/index.js
+/*  import './index.css'
+import jpg from './images/image.jpg'
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var image = new Image();
-  image.src = image_namespaceObject;
-  document.querySelector('.images').appendChild(image);
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const image = new Image()
+  image.src = jpg
+  document.querySelector('.images').appendChild(image)
+})
 
 window.setLanguage = function (lang) {
-  console.log('Установлен язык:', lang); // логика замены содержимого
+  console.log('Установлен язык:', lang);
+  // логика замены содержимого
 };
-
 new HtmlWebpackPlugin({
   template: './src/library.html',
   filename: 'library.html',
-  chunks: ['index'] // ИЛИ 'page', если setLanguage определена там
+  chunks: ['index']  // ИЛИ 'page', если setLanguage определена там
+})
 
-});
 
-window.setLanguage = lang.setLanguage;
-(0,lang.initLanguage)();
+import { initLanguage, setLanguage } from './lang.js';
+
+window.setLanguage = setLanguage;
+initLanguage();
+
 new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: 'index.html',
   chunks: ['index']
-});
+})
+/*/
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Добавляем картинку jpg в контейнер с классом .images
+  var image = new Image();
+  image.src = image_namespaceObject;
+  var imagesContainer = document.querySelector('.images');
+
+  if (imagesContainer) {
+    imagesContainer.appendChild(image);
+  } // Инициализируем язык при загрузке страницы
+
+
+  (0,lang.initLanguage)();
+}); // Назначаем глобальную функцию для переключения языка
+
+window.setLanguage = lang.setLanguage;
 })();
 
 /******/ })()
